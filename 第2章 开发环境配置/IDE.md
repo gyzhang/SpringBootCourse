@@ -1,54 +1,53 @@
----
-typora-root-url: images
----
+# 第2章 开发环境配置
 
-## 安装JDK
+
+## <span id = 'jdk'>安装JDK</span>
 
 首先去Oracle官网下载[ Java SE Development Kit 8u201](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)。
 
 然后双击运行下载回来的**jdk-8u201-windows-x64.exe**文件。
 
-![启动安装程序](/install-jdk-01.png)
+![启动安装程序](images/install-jdk-01.png)
 
 指定安装路径，例如，我将JDK安装到 **C:\\Java\\jdk1.8.0_201\\** 下。需要注意的是，JDK安装目录尽量不要含中文和（或）空格。
 
-![定制安装](/install-jdk-02.png)
+![定制安装](images/install-jdk-02.png)
 
 进行安装。
 
-![安装进行中](/install-jdk-03.png)
+![安装进行中](images/install-jdk-03.png)
 
 安装完JDK后，安装程序会弹出Oracle用户许可提醒信息，接受即可。
 
-![许可信息提醒](/install-jdk-04.png)
+![许可信息提醒](images/install-jdk-04.png)
 
 继续安装JRE，建议jre也安装到一个不含中文和（或）空格的目录中。
 
-![为JRE指定路径](/install-jdk-05.png)
+![为JRE指定路径](images/install-jdk-05.png)
 
 JRE安装中。
 
-![JRE安装中](/install-jdk-06.png)
+![JRE安装中](images/install-jdk-06.png)
 
 安装完成。
 
-![安装完成](/install-jdk-07.png)
+![安装完成](images/install-jdk-07.png)
 
 设置JAVA_HOME环境变量。
 
-![设置JAVA_HOME](/install-jdk-08.png)
+![设置JAVA_HOME](images/install-jdk-08.png)
 
 将JAVA加入path，方面后续通过命令行使用jdk。
 
-![将jdk加入path](/install-jdk-09.png)
+![将jdk加入path](images/install-jdk-09.png)
 
 验证jdk是否正确安装：打开命令窗口，输入‘java -version'，查看安装的jdk版本信息，如正确显示jdk版本信息，则jdk成功安装并配置正确。
 
-![验证安装](/install-jdk-10.png)
+![验证安装](images/install-jdk-10.png)
 
 
 
-## 安装Maven
+## <span id = 'maven'>安装Maven</span>
 
 Maven是Apache下的一个开源项目，它基于项目对象模型(POM project object model)，可以通过一小段描述信息（配置）来管理项目的构建，报告和文档，是一个优秀的、被广泛使用的软件项目管理工具软件。
 
@@ -94,7 +93,7 @@ Maven 除了以程序构建能力为特色之外，还提供许多高级项目�
 </mirror>
 ```
 
-## 安装STS
+## <span id = 'sts'>安装STS</span>
 
 STS是Spring官方在Eclipse IDE for Enterprise Java Developers的基础上整合了Spring开发插件后的开发工具发行版，使用这个发行版进行Spring相关应用开发非常方便，强烈推荐。
 
@@ -108,94 +107,94 @@ java -jar spring-tool-suite-4-4.4.1.RELEASE-e4.13.0-win32.win32.x86_64.self-extr
 
 将STS解压到当前目录
 
-![解压STS](/install-sts-00.png)
+![解压STS](images/install-sts-00.png)
 
 为STS创建工作空间目录，例如**C:\sts-4.4.1.RELEASE\workspace**，然后启动STS集成开发工具。
 
-![启动STS](/install-sts-01.png)
+![启动STS](images/install-sts-01.png)
 
 由于Windows系统的默认字符集是GBK，我们需要为工作空间指定UTF-8字符集。
 
-![工作空间字符集设置为UTF-8](/install-sts-02.png)
+![工作空间字符集设置为UTF-8](images/install-sts-02.png)
 
 在STS中配置外部maven，以保持开发环境内外配置及调用一致。
 
-![指定外部Maven](/install-sts-03.png)
+![指定外部Maven](images/install-sts-03.png)
 
 为STS指定Maven配置文件，以使用前面设置的JDK8及阿里云仓库镜像。
 
-![指定Maven配置文件](/install-sts-04.png)
+![指定Maven配置文件](images/install-sts-04.png)
 
-## 安装MySQL
+## <span id = 'mysql'>安装MySQL</span>
 
 在Windows 10下安装MySQL 5.7.19，需要提前安装微软的VC++2013依赖库vcredist_x64，可在微软官方网站下载。
 
-![安装VC++依赖库](/install-mysql-01.png)
+![安装VC++依赖库](images/install-mysql-01.png)
 
 接下来就可以安装MySQL了。
-![启动安装器](/install-mysql-02.png)
+![启动安装器](images/install-mysql-02.png)
 
 选择“只安装服务器”。
 
-![只安装服务器](/install-mysql-03.png)
+![只安装服务器](images/install-mysql-03.png)
 
 确认安装。
 
-![执行安装](/install-mysql-04.png)
+![执行安装](images/install-mysql-04.png)
 
 安装完成。
 
-![安装完成](/install-mysql-05.png)
+![安装完成](images/install-mysql-05.png)
 
 准备配置MySQL服务器。
 
-![准备配置](/install-mysql-06.png)
+![准备配置](images/install-mysql-06.png)
 
 选择配置MySQL服务器类型。
 
-![标准服务器](/install-mysql-07.png)
+![标准服务器](images/install-mysql-07.png)
 
 配置服务器为开发服务器，以减少对计算机资源的占用。
 
-![配置为开发服务器](/install-mysql-08.png)
+![配置为开发服务器](images/install-mysql-08.png)
 
 设置root用户密码，尽量使用足够复杂的密码。
 
-![设置root用户密码](/install-mysql-09.png)
+![设置root用户密码](images/install-mysql-09.png)
 
 配置MySQL为Windows系统服务。
 
-![配置系统服务](/install-mysql-10.png)
+![配置系统服务](images/install-mysql-10.png)
 
 完成安装。
 
-![完成安装](/install-mysql-11.png)
+![完成安装](images/install-mysql-11.png)
 
 安装MySQL管理工具，如navicat。
 
-![安装navicat](/install-mysql-12.png)
+![安装navicat](images/install-mysql-12.png)
 
 打开navicat验证MySQL是否正确安装。
 
-![验证MySQL是否正确安装](/install-mysql-13.png)
+![验证MySQL是否正确安装](images/install-mysql-13.png)
 
-## 验证开发环境
+## <span id = 'validation'>验证开发环境</span>
 
 在STS中新建一个Spring Starter项目。
 
-![新建项目](/validate-ide-01.png)
+![新建项目](images/validate-ide-01.png)
 
 在新建Spring Starter项目中，使用默认配置。
 
-![新建Maven项目](/validate-ide-02.png)
+![新建Maven项目](images/validate-ide-02.png)
 
 选择Spring Boot的starter，这里我们输入“web”进行快速定位和选择，然后单击Finish按钮。
 
-![选择原型骨架](/validate-ide-03.png)
+![选择原型骨架](images/validate-ide-03.png)
 
 STS会根据我们前面给定的项目信息，联网到https://start.spring.io创建最初始的Spring Boot项目。
 
-![指定Maven项目信息](/validate-ide-04.png)
+![指定Maven项目信息](images/validate-ide-04.png)
 
 我们可以进一步检查pom文件，观察其内容如下：
 
@@ -290,14 +289,14 @@ public class HelloController {
 
 通过启动类DemoApplication启动项目。
 
-![启动项目](/validate-ide-05.png)
+![启动项目](images/validate-ide-05.png)
 
 注意观察控制台中输出的SpringBoot信息，其中包含SpringBoot版本号的启动logo。
 
-![SpringBoot启动信息](/validate-ide-06.png)
+![SpringBoot启动信息](images/validate-ide-06.png)
 
 打开Chrome浏览器，访问http://localhost:8080/hello，可正确显示前面HelloController中hello方法输出的字符串“Hello Spring Boot.”。
 
-![1551024978935](/validate-ide-07.png)
+![1551024978935](images/validate-ide-07.png)
 
 通过上述步骤，就已经准备好了Spring Boot的开发环境。
