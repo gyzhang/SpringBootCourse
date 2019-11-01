@@ -202,7 +202,7 @@ java -jar spring-tool-suite-4-4.4.1.RELEASE-e4.13.0-win32.win32.x86_64.self-extr
 
 ![选择原型骨架](images/validate-ide-03.png)
 
-STS会根据我们前面给定的项目信息，联网到https://start.spring.io创建最初始的Spring Boot项目。
+STS会根据我们前面给定的项目信息，联网到[https://start.spring.io](https://start.spring.io)创建最初始的Spring Boot项目。
 
 ![指定Maven项目信息](images/validate-ide-04.png)
 
