@@ -305,7 +305,7 @@ public class HelloController {
 
 ![SpringBoot启动信息](images/validate-ide-06.png)
 
-打开Chrome浏览器，访问http://localhost:8080/hello，可正确显示前面HelloController中hello方法输出的字符串“Hello Spring Boot.”。
+打开Chrome浏览器，[http://localhost:8080/hello](http://localhost:8080/hello) ，可正确显示前面HelloController中hello方法输出的字符串“Hello Spring Boot.”。
 
 ![1551024978935](images/validate-ide-07.png)
 
