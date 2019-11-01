@@ -97,5 +97,5 @@
         * [15.3.3 Web层实现](第15章 Spring Boot 综合示例/DevExample.md#web) 
     * [15.4 项目总结](第15章 Spring Boot 综合示例/DevExample.md#summary) 
 
-* [后记](Postscript.md)
+* [后记](POSTSCRIPT.md)
 
