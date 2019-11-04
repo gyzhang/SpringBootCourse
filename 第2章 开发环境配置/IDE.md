@@ -11,7 +11,7 @@
 | 3    | STS     | 4.4.1.RELEASE | 基于eclipse的整合Spring插件的开发环境 |
 |      | Windows | 10            | 操作系统                              |
 
-## <span id = 'jdk'>安装JDK</span>
+## <span id = 'jdk'>2.1 安装JDK</span>
 
 首先去Oracle官网下载[ Java SE Development Kit 8u201](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)。
 
@@ -57,7 +57,7 @@ JRE安装中。
 
 
 
-## <span id = 'maven'>安装Maven</span>
+## <span id = 'maven'>2.2 安装Maven</span>
 
 Maven是Apache下的一个开源项目，它基于项目对象模型(POM project object model)，可以通过一小段描述信息（配置）来管理项目的构建，报告和文档，是一个优秀的、被广泛使用的软件项目管理工具软件。
 
@@ -103,7 +103,7 @@ Maven 除了以程序构建能力为特色之外，还提供许多高级项目�
 </mirror>
 ```
 
-## <span id = 'sts'>安装STS</span>
+## <span id = 'sts'>2.3 安装STS</span>
 
 STS是Spring官方在Eclipse IDE for Enterprise Java Developers的基础上整合了Spring开发插件后的开发工具发行版，使用这个发行版进行Spring相关应用开发非常方便，强烈推荐。
 
@@ -135,7 +135,7 @@ java -jar spring-tool-suite-4-4.4.1.RELEASE-e4.13.0-win32.win32.x86_64.self-extr
 
 ![指定Maven配置文件](images/install-sts-04.png)
 
-## <span id = 'mysql'>安装MySQL</span>
+## <span id = 'mysql'>2.4 安装MySQL</span>
 
 在Windows 10下安装MySQL 5.7.19，需要提前安装微软的VC++2013依赖库vcredist_x64，可在微软官方网站下载。
 
@@ -188,7 +188,7 @@ java -jar spring-tool-suite-4-4.4.1.RELEASE-e4.13.0-win32.win32.x86_64.self-extr
 
 ![验证MySQL是否正确安装](images/install-mysql-13.png)
 
-## <span id = 'validation'>验证开发环境</span>
+## <span id = 'validation'>2.5 验证开发环境</span>
 
 在STS中新建一个Spring Starter项目。
 
