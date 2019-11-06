@@ -9,7 +9,8 @@
 | 1    | JDK     | 8u201         | java 开发套件                         |
 | 2    | Maven   | 3.6.0         | 项目构建，依赖管理                    |
 | 3    | STS     | 4.4.1.RELEASE | 基于eclipse的整合Spring插件的开发环境 |
-|      | Windows | 10            | 操作系统                              |
+| 4    | Windows | 10            | 操作系统                              |
+|      | Tomcat  | 8.5.47        | 独立的外置Web容器                     |
 
 ## <span id = 'jdk'>2.1 安装JDK</span>
 
