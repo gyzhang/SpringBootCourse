@@ -80,15 +80,15 @@ AOP 在Spring 中的应用典型的有：
 
 Spring 3
 
-![Spring 3](images/spring3.jpg)
+![Spring 3](images/spring3-overview.png)s
 
 Spring 4
 
-![Spring 4](images/spring4.jpg)
+![Spring 4](images/spring4-overview.png)
 
 Spring 5
 
-![Spring 5](images/spring5.jpg)
+![Spring 5](images/spring5-overview.png)
 
 #### 1.1.2.1 Spring 3.2.x和4.x 的架构变化
 
