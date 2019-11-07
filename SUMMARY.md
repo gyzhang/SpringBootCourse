@@ -33,6 +33,7 @@
     * [3.2 基本配置](第3章 Spring Boot原理剖析/SpringBootHow.md#baseConfig) 
     * [3.3 启动类与核心注解](第3章 Spring Boot原理剖析/SpringBootHow.md#annotation) 
     * [3.4 自动配置原理](第3章 Spring Boot原理剖析/SpringBootHow.md#autoConfig) 
+    * [3.5 课后作业](第3章 Spring Boot原理剖析/SpringBootHow.md#homework)
 
 * [第4章 Spring Boot Web开发](第4章 Spring Boot Web开发/SpringBootWeb.md)
     * [4.1 Spring MVC介绍](第4章 Spring Boot Web开发/SpringBootWeb.md#mvc) 
