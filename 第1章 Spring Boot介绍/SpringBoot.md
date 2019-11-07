@@ -42,7 +42,7 @@ Spring使用基本的JavaBean（POJO）来完成以前只可能由EJB完成的�
 
 下面，为了简化并抓住重点，我们以Spring Framework 1.1.1版本第一次提供的[reference](https://docs.spring.io/spring/docs/1.1.1/reference/)为基础，来介绍Spring的分层架构。
 
- Spring 框架是一个分层架构，由 7 个定义良好的模块组成。Spring 模块构建在核心容器之上，核心容器定义了创建、配置和管理 bean 的方式，如下图所示：
+ Spring 框架（以版本1.1.1 为例）是一个分层架构，由 7 个定义良好的模块组成。Spring 模块构建在核心容器之上，核心容器定义了创建、配置和管理 bean 的方式，如下图所示：
 
  ![Spring 框架图示](images/spring1.1.1-overview.gif) 
 
@@ -78,25 +78,25 @@ AOP 在Spring 中的应用典型的有：
 
 ### <span id = 'springOverview2'>1.1.2 Spring 的进化</span>
 
-随着互联网技术的发展，Spring也在不断的进化，从最早轻量级的支持J2EE到现在对高并发，多线程异步程序的支持，Spring也不断的更新自己走在技术的最前沿，我们从Spring3到Spring5 看看spring的发展变迁。
+随着互联网技术的发展，Spring也在不断的进化，从最早轻量级的支持J2EE到现在对高并发，多线程异步程序的支持，Spring也从版本1到版本5不断的更新自己走在技术的最前沿，下面我们从Spring3到Spring5 看看spring的发展变迁。
 
-Spring 1
+Spring 1 分层架构：
 
 ![Spring 1分层架构](images/spring1-overview.gif)
 
-Spring 2
+Spring 2 分层架构：
 
 ![Spring 2分层架构](images/spring2-overview.png)
 
-Spring 3
+Spring 3 分层架构：
 
 ![Spring 3分层架构](images/spring3-overview.png)s
 
-Spring 4
+Spring 4 分层架构：
 
 ![Spring 4分层架构](images/spring4-overview.png)
 
-Spring 5
+Spring 5 分层架构：
 
 ![Spring 5分层架构](images/spring5-overview.png)
 
@@ -677,3 +677,10 @@ public class SayHelloController {
 恭喜你，你已经完成了你的第一个Spring Boot程序。
 
 后续，我们会一步一步地介绍在实际工作中，如何使用Spring Boot集成我们常用的开发框架/类库。
+
+## <span id = 'homework'>1.5 课后作业</span>
+
+1. 简要描述Spring框架是什么？能做什么？
+2. 简要描述Spring框架的版本变迁。
+3. 简要描述Spring Boot出现的历史背景，它是什么？能做什么？能给程序员带来什么好处？
+4. 开发并运行第一个Spring Boot程序，输出“我要好好学习，天天向上。”这样一句话，并观察程序运行过程。

@@ -311,3 +311,10 @@ public class HelloController {
 ![1551024978935](images/validate-ide-07.png)
 
 通过上述步骤，就已经准备好了Spring Boot的开发环境。
+
+## <span id = 'homework'>2.6 课后作业</span>
+
+1. 检查安装的jdk版本，确保是JDK 8，输出其版本号。
+2. 检查Maven版本，确保其使用了国内阿里云镜像仓库。
+3. 使用图形化管理工具在MySQL中创建一个数据库，创建一张表，并插入两条数据。
+4. 验证开发环境，能够正确运行一个最简单的Spring Boot程序。
