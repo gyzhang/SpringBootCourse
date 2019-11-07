@@ -40,9 +40,11 @@ Spring 是一个于2003 年兴起的一个轻量级的开源Java 开发框架，
 
 Spring使用基本的JavaBean（POJO）来完成以前只可能由EJB完成的事情。然而，Spring的用途不仅限于服务器端的开发。从简单性、可测试性和松耦合的角度而言，任何Java应用都可以从Spring中受益。Spring的核心是控制反转（IoC）和面向切面（AOP）。简单来说，Spring是一个分层的JavaSE/EE full-stack(一站式) 轻量级开源框架。
 
+下面，为了简化并抓住重点，我们以Spring Framework 1.1.1版本第一次提供的[reference](https://docs.spring.io/spring/docs/1.1.1/reference/)为基础，来介绍Spring的分层架构。
+
  Spring 框架是一个分层架构，由 7 个定义良好的模块组成。Spring 模块构建在核心容器之上，核心容器定义了创建、配置和管理 bean 的方式，如下图所示：
 
- ![Spring 框架图示](images/spring_framework.gif) 
+ ![Spring 框架图示](images/spring1.1.1-overview.gif) 
 
 组成 Spring 框架的每个模块（或组件）都可以单独存在，或者与其他一个或多个模块联合实现。每个模块的功能如下：
 
