@@ -80,17 +80,25 @@ AOP 在Spring 中的应用典型的有：
 
 随着互联网技术的发展，Spring也在不断的进化，从最早轻量级的支持J2EE到现在对高并发，多线程异步程序的支持，Spring也不断的更新自己走在技术的最前沿，我们从Spring3到Spring5 看看spring的发展变迁。
 
+Spring 1
+
+![Spring 1分层架构](images/spring1-overview.gif)
+
+Spring 2
+
+![Spring 2分层架构](images/spring2-overview.png)
+
 Spring 3
 
-![Spring 3](images/spring3-overview.png)s
+![Spring 3分层架构](images/spring3-overview.png)s
 
 Spring 4
 
-![Spring 4](images/spring4-overview.png)
+![Spring 4分层架构](images/spring4-overview.png)
 
 Spring 5
 
-![Spring 5](images/spring5-overview.png)
+![Spring 5分层架构](images/spring5-overview.png)
 
 #### 1.1.2.1 Spring 3.2.x和4.x 的架构变化
 
