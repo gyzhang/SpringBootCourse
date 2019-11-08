@@ -24,7 +24,7 @@ pom.xml文件，maven项目的配置依赖管理文件。其中包含了Spring B
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.0.RELEASE</version>
+		<version>2.2.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
@@ -90,7 +90,7 @@ pom.xml文件，maven项目的配置依赖管理文件。其中包含了Spring B
 
 ### 3.1.3 src/main/resources
 
-各种资源，如配置文件application.properties都应该防止在这里。如果你的程序使用了MyBatis，则其mapper文件也应该防止在这里的某个子目录下。
+各种资源，如配置文件application.properties都应该放在这里。如果你的程序使用了MyBatis，则其mapper文件也应该放在这里的某个子目录下。
 
 静态资源文件存放在static子目录中。如果你的Spring Boot应用是个前后端分离的项目，为了简化部署（只有一台服务器，服务用户人数在50人左右的简单应用），可以将前端vue的对应文件放置在这里，然后使用`java -jar xxx.jar`就可以运行这个程序了。
 
@@ -102,9 +102,254 @@ pom.xml文件，maven项目的配置依赖管理文件。其中包含了Spring B
 
 ## <span id = "baseConfig">3.2 基本配置</span>
 
+本小节，分析Spring Boot的基本配置，了解其配置项。
+
+### 3.2.1 父级依赖
+
+我们在几乎在所有的Spring Boot项目中，都会看到`spring-boot-starter-parent`这样的父级依赖。
+
+```xml
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.2.1.RELEASE</version>
+    <relativePath/> <!-- lookup parent from repository -->
+</parent>
+```
+
+父级依赖，确定了Spring Boot项目的主版本和 默认依赖：
+
+1. java版本默认使用1.8；
+
+2. 编码格式默认使用utf-8；
+
+3. 提供Dependency Management进行项目依赖的版本管理；
+
+4. 默认的资源过滤与插件管理。
+
+其后的一些启动器（starter），就不需要指定版本了。
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+```
+
+例如上面的web依赖，只需要指定`spring-boot-starter-web`即可。
+
+但是，在机缘巧合的情况下，我们的项目（很有可能是遗留项目）已经有了`parent`，那该怎么办呢？
+
+Spring一贯做法是”约定大于配置“，但总会为特殊情况下留下挪腾的空间：使用`dependencyManagement`方式import pom：
+
+```xml
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <!-- Import dependency management from Spring Boot -->
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-dependencies</artifactId>
+            <version>2.2.1.RELEASE</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+```
+
+然后，就可以安心地使用项目中的（或组织要求的）parent了。
+
+### 3.2.2 application.properties
+
+### 3.2.3 application.yml
+
+### 3.2.4 Profile
+
+### 3.2.5 Web容器配置
+
+### 3.2.6 定制banner
+
+为了发挥娱乐精神，Spring Boot启动信息中的banner也是可以定制的。我个人觉得，这就是一个彩蛋。
+
+
 ## <span id = "annotation">3.3 启动类与核心注解</span>
+
+标注@SpringBootApplication注解的类，就是Spring Boot应用程序的启动类。这个启动类中包含main方法。
+
+@SpringBootApplication注解就是Spring Boot的核心注解。
+
+```java
+/*
+ * Copyright 2012-2019 the original author or authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package org.springframework.boot.autoconfigure;
+
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Inherited;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+import org.springframework.boot.SpringBootConfiguration;
+import org.springframework.boot.context.TypeExcludeFilter;
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ComponentScan.Filter;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.FilterType;
+import org.springframework.core.annotation.AliasFor;
+import org.springframework.data.repository.Repository;
+
+/**
+ * Indicates a {@link Configuration configuration} class that declares one or more
+ * {@link Bean @Bean} methods and also triggers {@link EnableAutoConfiguration
+ * auto-configuration}, {@link ComponentScan component scanning}, and
+ * {@link ConfigurationPropertiesScan configuration properties scanning}. This is a
+ * convenience annotation that is equivalent to declaring {@code @Configuration},
+ * {@code @EnableAutoConfiguration}, {@code @ComponentScan}.
+ *
+ * @author Phillip Webb
+ * @author Stephane Nicoll
+ * @author Andy Wilkinson
+ * @since 1.2.0
+ */
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+@Inherited
+@SpringBootConfiguration
+@EnableAutoConfiguration
+@ComponentScan(excludeFilters = { @Filter(type = FilterType.CUSTOM, classes = TypeExcludeFilter.class),
+		@Filter(type = FilterType.CUSTOM, classes = AutoConfigurationExcludeFilter.class) })
+public @interface SpringBootApplication {
+
+	/**
+	 * Exclude specific auto-configuration classes such that they will never be applied.
+	 * @return the classes to exclude
+	 */
+	@AliasFor(annotation = EnableAutoConfiguration.class)
+	Class<?>[] exclude() default {};
+
+	/**
+	 * Exclude specific auto-configuration class names such that they will never be
+	 * applied.
+	 * @return the class names to exclude
+	 * @since 1.3.0
+	 */
+	@AliasFor(annotation = EnableAutoConfiguration.class)
+	String[] excludeName() default {};
+
+	/**
+	 * Base packages to scan for annotated components. Use {@link #scanBasePackageClasses}
+	 * for a type-safe alternative to String-based package names.
+	 * <p>
+	 * <strong>Note:</strong> this setting is an alias for
+	 * {@link ComponentScan @ComponentScan} only. It has no effect on {@code @Entity}
+	 * scanning or Spring Data {@link Repository} scanning. For those you should add
+	 * {@link org.springframework.boot.autoconfigure.domain.EntityScan @EntityScan} and
+	 * {@code @Enable...Repositories} annotations.
+	 * @return base packages to scan
+	 * @since 1.3.0
+	 */
+	@AliasFor(annotation = ComponentScan.class, attribute = "basePackages")
+	String[] scanBasePackages() default {};
+
+	/**
+	 * Type-safe alternative to {@link #scanBasePackages} for specifying the packages to
+	 * scan for annotated components. The package of each class specified will be scanned.
+	 * <p>
+	 * Consider creating a special no-op marker class or interface in each package that
+	 * serves no purpose other than being referenced by this attribute.
+	 * <p>
+	 * <strong>Note:</strong> this setting is an alias for
+	 * {@link ComponentScan @ComponentScan} only. It has no effect on {@code @Entity}
+	 * scanning or Spring Data {@link Repository} scanning. For those you should add
+	 * {@link org.springframework.boot.autoconfigure.domain.EntityScan @EntityScan} and
+	 * {@code @Enable...Repositories} annotations.
+	 * @return base packages to scan
+	 * @since 1.3.0
+	 */
+	@AliasFor(annotation = ComponentScan.class, attribute = "basePackageClasses")
+	Class<?>[] scanBasePackageClasses() default {};
+
+	/**
+	 * Specify whether {@link Bean @Bean} methods should get proxied in order to enforce
+	 * bean lifecycle behavior, e.g. to return shared singleton bean instances even in
+	 * case of direct {@code @Bean} method calls in user code. This feature requires
+	 * method interception, implemented through a runtime-generated CGLIB subclass which
+	 * comes with limitations such as the configuration class and its methods not being
+	 * allowed to declare {@code final}.
+	 * <p>
+	 * The default is {@code true}, allowing for 'inter-bean references' within the
+	 * configuration class as well as for external calls to this configuration's
+	 * {@code @Bean} methods, e.g. from another configuration class. If this is not needed
+	 * since each of this particular configuration's {@code @Bean} methods is
+	 * self-contained and designed as a plain factory method for container use, switch
+	 * this flag to {@code false} in order to avoid CGLIB subclass processing.
+	 * <p>
+	 * Turning off bean method interception effectively processes {@code @Bean} methods
+	 * individually like when declared on non-{@code @Configuration} classes, a.k.a.
+	 * "@Bean Lite Mode" (see {@link Bean @Bean's javadoc}). It is therefore behaviorally
+	 * equivalent to removing the {@code @Configuration} stereotype.
+	 * @since 2.2
+	 * @return whether to proxy {@code @Bean} methods
+	 */
+	@AliasFor(annotation = Configuration.class)
+	boolean proxyBeanMethods() default true;
+
+}
+```
+
+通过阅读@SpringBootApplication的源码，发现其由3个注解构成：
+
+1. @SpringBootConfiguration
+2. @EnableAutoConfiguration
+3. @ComponentScan
+
+如果我们将@SpringBootApplication注解替换为上面3个注解，效果一样。
+
+```java
+package com.example.hello;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.SpringBootConfiguration;
+import org.springframework.boot.autoconfigure.AutoConfigurationExcludeFilter;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.context.TypeExcludeFilter;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ComponentScan.Filter;
+import org.springframework.context.annotation.FilterType;
+
+//@SpringBootApplication
+@SpringBootConfiguration
+@EnableAutoConfiguration
+@ComponentScan(excludeFilters = { @Filter(type = FilterType.CUSTOM, classes = TypeExcludeFilter.class),
+		@Filter(type = FilterType.CUSTOM, classes = AutoConfigurationExcludeFilter.class) })
+public class HelloSpringBootApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HelloSpringBootApplication.class, args);
+	}
+
+}
+```
 
 ## <span id = "autoConfig">3.4 自动配置原理</span>
 
-## <span id = 'homework'>2.6 课后作业</span>
+## <span id = 'homework'>3.5 课后作业</span>
 
