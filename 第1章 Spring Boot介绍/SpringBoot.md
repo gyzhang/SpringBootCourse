@@ -480,6 +480,8 @@ Spring Boot测试模块，为应用测试提供了许多非常有用的核心功
 
 请参照本教程第2章的“开发环境配置”，完成本地开发环境的配置，然后再来“Hello Spring Boot.”。
 
+### <span id = "createProject">1.4.1 创建项目</span>
+
 首先，我们创建一个Spring Starter工程，如下图所示：
 
 ![创建工程](images/image-20191106220209093.png)
@@ -622,6 +624,8 @@ public class HelloSpringBootApplication {
 2019-11-06 22:27:54.021  INFO 1704 --- [           main] c.e.hello.HelloSpringBootApplication     : Started HelloSpringBootApplication in 1.422 seconds (JVM running for 2.316)
 ```
 
+### <span id = "controller">1.4.2 编写Controller代码</span>
+
 下面，我们为这个程序添加一个Controller，输出“Hello Spring Boot.”这句话。
 
 首先创建`com.example.hello.controller`包，然后在其下创建`SayHelloController`类，代码如下：
@@ -642,6 +646,8 @@ public class SayHelloController {
 
 }
 ```
+
+### <span id = "runIDE">1.4.3 在IDE中运行</span>
 
 再次运行`HelloSpringBootApplication`这个类（当然，也可以说运行这个Spring Boot应用/程序），在控制台中输出的日志，已经包含`DispatcherServlet`这个Spring MVC的前端分发器类了。
 
@@ -675,6 +681,92 @@ public class SayHelloController {
 ![image-20191106223827184](images/image-20191106223827184.png)
 
 恭喜你，你已经完成了你的第一个Spring Boot程序。
+
+### <span id = "package">1.4.4 打包</span>
+
+当一个应用开发完成后，需要分发时，通常会将Spring Boot应用程序打包为一个jar包。
+
+在STS中，选择`Maven build...`
+
+![image-20191108112127796](images/image-20191108112127796.png)
+
+在Maven build的目标（Goals）中输入`clean package `，为了更快的打包，勾选`Skip Tests`复选框。
+
+![image-20191108112320237](images/image-20191108112320237.png)
+
+正常情况下，稍等片刻，Maven就会完成打包操作，注意观察控制台输出的日志。
+
+`[INFO] BUILD SUCCESS`表示Maven任务正确完成。
+
+```
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.example:hello >--------------------------
+[INFO] Building HelloSpringBoot 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ hello ---
+[INFO] Deleting C:\sts-4.4.1.RELEASE\workspace\HelloSpringBoot\target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ hello ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ hello ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to C:\sts-4.4.1.RELEASE\workspace\HelloSpringBoot\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ hello ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ hello ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ hello ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ hello ---
+[INFO] Building jar: C:\sts-4.4.1.RELEASE\workspace\HelloSpringBoot\target\hello-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.0.RELEASE:repackage (repackage) @ hello ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.251 s
+[INFO] Finished at: 2019-11-08T11:29:53+08:00
+[INFO] ------------------------------------------------------------------------
+[WARNING] The requested profile "pom.xml" could not be activated because it does not exist.
+```
+
+打开项目文件目录下的target子目录，其中`hello-0.0.1-SNAPSHOT.jar`就是打包好的项目可运行jar包。
+
+![image-20191108113122098](images/image-20191108113122098.png)
+
+> 其中还有一个很小的`hello-0.0.1-SNAPSHOT.jar.original`文件，就是项目编译的文件。
+>
+> 而`hello-0.0.1-SNAPSHOT.jar`是spring-boot-maven-plugin插件帮我们把依赖jar包和内嵌tomcat打包到一起了的`fat jar`。
+
+打开`hello-0.0.1-SNAPSHOT.jar`这个`fat jar`文件，查看其`BOOT-INF\lib`目录，可以看到其依赖的各种jar包。
+
+![image-20191108140828875](images/image-20191108140828875.png)
+
+### <span id = "run">1.4.5 独立运行程序</span>
+
+Spring Boot打包出来的jar文件支持独立运行，执行`java -jar`，运行Hello Spring Boot程序。
+
+```
+java -jar hello-0.0.1-SNAPSHOT.jar
+```
+
+在命令提示符窗口中，可以看到这个Spring Boot程序正确启动了。
+
+![image-20191108141331525](images/image-20191108141331525.png)
+
+打开浏览器，访问[localhost:8080/hello](http://localhost:8080/hello)，同样可以正确得到前面Controller类中sayHello方法的输出。
+
+![image-20191106223827184](images/image-20191106223827184.png)
 
 后续，我们会一步一步地介绍在实际工作中，如何使用Spring Boot集成我们常用的开发框架/类库。
 

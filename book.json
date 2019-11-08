@@ -1,9 +1,29 @@
 {
-    "title": "Spring Boot 入门教程",
-    "description": "针对初级程序员的Spring Boot 入门教程，使用版本2.2.0",
+    "title": "Spring Boot入门教程",
+    "description": "针对初级程序员的Spring Boot入门教程，使用版本2.2.0",
     "author": "Kevin Zhang",
+	"language": "zh-hans",
 	
-	"plugins" : [ 
-		"code" 
-	]
+	"plugins": [ 
+		"-search",
+		"search-pro",
+		"code",
+		"splitter",
+		"expandable-chapters-small",
+		"page-toc-button",
+		"back-to-top-button"
+	],
+	
+	"pluginsConfig": {
+		"search-pro": {
+			"cutWordLib": "nodejieba",
+			"defineWord": ["Spring Boot"],
+			"expandable-chapters-small":{}
+		}
+	},
+	
+	"pdf": {
+		"paperSize": "a4",
+		"fontSize": 30		
+	}
 }
