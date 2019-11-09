@@ -1,4 +1,4 @@
-# 第1章 Spring Boot 介绍
+# 第1章 Spring Boot介绍
 
 当前，我们广泛使用的 Spring 技术栈，包含了基本的 Spring Framework，Spring Boot，Spring Cloud 和 Spring Cloud Data Flow。正如 Spring 官方网站[spring.io]( https://spring.io/ )宣称的一样：Spring 就是现代 java 之源。
 
@@ -22,7 +22,7 @@ Spring 官方是这么宣传的，它也是这么做的，通过十多年的努�
 >
 > 在Java程序开发中，Spring 就是连接的关键，就如它最早被叫做“胶水”一样。
 
-## <span id = 'springOverview'> 1.1  Spring 介绍</span>
+## <span id = 'springOverview'> 1.1  Spring介绍</span>
 
 当我们单独讲 Spring 时，一般是指 Spring Framework，就如下面的 maven 依赖所示，当前最新的版本为5.2.1（2019年11月2日release）。
 
@@ -34,7 +34,7 @@ Spring 官方是这么宣传的，它也是这么做的，通过十多年的努�
 </dependency>
 ```
 
-### <span id = 'springOverview1'>1.1.1 Spring 概述</span>
+### <span id = 'springOverview1'>1.1.1 Spring概述</span>
 
 Spring 是一个于2003 年兴起的一个轻量级的开源Java 开发框架，由其作者Rod Johnson 在其著作Expert One-On-One J2EE Development and Design中阐述的部分理念和原型衍生而来。它是为了解决企业应用开发的复杂性而创建的。框架的主要优势之一就是其分层架构，分层架构允许使用者选择使用哪一个组件，同时为 J2EE 应用程序开发提供集成的框架。
 
@@ -76,7 +76,7 @@ AOP 在Spring 中的应用典型的有：
 - 自动事务管理；
 - 统一日志管理。
 
-### <span id = 'springOverview2'>1.1.2 Spring 的进化</span>
+### <span id = 'springOverview2'>1.1.2 Spring的进化</span>
 
 随着互联网技术的发展，Spring也在不断的进化，从最早轻量级的支持J2EE到现在对高并发，多线程异步程序的支持，Spring也从版本1到版本5不断的更新自己走在技术的最前沿，下面我们从Spring3到Spring5 看看spring的发展变迁。
 
@@ -100,7 +100,7 @@ Spring 5 分层架构：
 
 ![Spring 5分层架构](images/spring5-overview.png)
 
-#### 1.1.2.1 Spring 3.2.x和4.x 的架构变化
+#### 1.1.2.1 Spring 3.2.x和4.x的架构变化
 
 1. 从上面的图中可以看出，总体的层次结构没有太大变化，变化的是 Spring 4 去掉了 struts 模块(spring-struts包)。增加 WebSocket 模块(spring-websocket包)，增加了对 WebSocket、SockJS 以及 STOMP 的支持，它与 JSR-356 Java WebSocket API 兼容。另外，还提供了基于 SockJS（对 WebSocket 的模拟）的回调方案，以适应不支持 WebSocket 协议的浏览器。
 
@@ -136,7 +136,7 @@ Spring 5 分层架构：
 
 - 为 Spring MVC 应用程序开发提供全面的时区支持。
 
-#### 1.1.2.2 Spring 5 的架构变化
+#### 1.1.2.2 Spring 5的架构变化
 
 1. 升级到 Java SE 8 和 Java EE 7。
 
@@ -150,7 +150,7 @@ Spring 5 分层架构：
 
 - 新的spring-webflux模块，一个基于reactive的spring-webmvc，完全的异步非阻塞，旨在使用event-loop执行模型和传统的线程池模型。
 
-### <span id = 'springOverview3'>1.1.3 Spring 5 的新特性</span>
+### <span id = 'springOverview3'>1.1.3 Spring 5的新特性</span>
 
 Spring 5.0是在2013年发布Spring 4后的第一个大版本，5.0 M1在2016年7月28日发布，当前最新版本为5.2.1。随着Spring Boot 和 Spring Cloud的广泛使用，使用Spring 5的人数是越来越多，如果你之前使用过Spring 4，那么Spring 5有哪些新的特性呢？一起来看下吧
 
@@ -290,7 +290,7 @@ Spring 5.0现在支持下面的库版本：
 
 > Spring Roo is an easy-to-use development tool for quickly building web applications in the Java programming language, which can be used as an standalone application or as an Eclipse or STS plugin. It allows you to build high-quality, high-performance, lock-in-free enterprise applications in just minutes. 
 
-### <span id = 'springBootOverview1'>1.2.1 Spring Boot 概述</span>
+### <span id = 'springBootOverview1'>1.2.1 Spring Boot概述</span>
 
 Spring Boot是 Spring 开源组织下的一个子项目，也是 Spring 组件一站式解决方案，主要是为了简化使用 Spring 框架的难度，简省繁重的配置。
 
@@ -304,7 +304,7 @@ Spring Boot 的设计目标是：
 - 提供一系列在大型项目中经常用到的公共的非功能性特性，如：内嵌入服务器、安全、度量指标、健康检测、外部化配置；
 - 零代码配置生成及零 XML 配置；
 
-### <span id = 'springBootOverview2'>1.2.2 Spring Boot 能做什么</span>
+### <span id = 'springBootOverview2'>1.2.2 Spring Boot能做什么</span>
 
 1. **独立运行**
 
@@ -344,7 +344,7 @@ Spring Boot 配置过程中无代码生成，也无需XML配置文件就能完�
 
 Spring Boot提供一系列端点可以监控服务及应用，能对Spring 应用做健康检测。
 
-### <span id = 'springBootOverview3'>1.2.3 Spring Boot 2 的新特性</span>
+### <span id = 'springBootOverview3'>1.2.3 Spring Boot 2的新特性</span>
 
 Spring Boot 依赖于Spring，而Spring Cloud 又依赖于Spring Boot，因此Spring Boot2.0的发布正式整合了Spring5.0 的很多特性，同样后面Spring Cloud 最新版本的发布也整合了最新的Spring Boot2.0内容。 
 
@@ -412,9 +412,13 @@ Spring Boot 2支持了Thymeleaf 3，Thymeleaf 3相对于Thymeleaf 2性能提升�
 
 注意：最后还有一个小彩蛋，Spring Boot2.0支持了动态gif的启动logo打印，这纯粹是为了好玩。
 
-## <span id = 'modules'>1.3 Spring Boot 的主要模块</span>
+## <span id = 'modules'>1.3 Spring Boot的主要模块</span>
 
-学习 Spring Boot 必须得了解它的核心模块，和 Spring 框架一样，Spring Boot 也是一个庞大的项目，也是由许多核心子模块组成的。 
+学习 Spring Boot必须得了解它的核心模块，和 Spring框架一样，Spring Boot也是一个庞大的项目，也是由许多核心子模块组成的。 
+
+Spring Boot在github上的[代码模块](https://github.com/spring-projects/spring-boot/tree/master/spring-boot-project)划分，如下图：
+
+![image-20191109110901277](images/image-20191109110901277.png)
 
 下面我们大概来了解一下 Spring Boot 的核心模块。
 
@@ -464,9 +468,11 @@ Spring Boot测试模块，为应用测试提供了许多非常有用的核心功
 
 这个原理同上，为 Spring Boot 测试模块提供自动配置。
 
-### 1.3.9 spring-boot-loader
+### 1.3.9 spring-boot-tools
 
-这个模块可以用来构建一个单独可执行的 jar 包，使用 `java -jar` 就能直接运行。一般不会直接使用这个来打包，使用 Spring Boot 提供的 Maven 或者 Gradle 插件就行了。
+这个模块包含了Spring Boot的一些工具，如Maven插件、Loader等。
+
+例如其中的spring-boot-loader可以用来构建一个单独可执行的 jar 包，使用 `java -jar` 就能直接运行。我们一般不会直接使用这个来打包，而是使用 Spring Boot提供的 Maven（spring-boot-maven-plugin）或者 Gradle 插件就行了。
 
 ### 1.3.10 spring-boot-devtools
 
@@ -476,9 +482,11 @@ Spring Boot测试模块，为应用测试提供了许多非常有用的核心功
 
 ## <span id = 'helloSpringBoot'>1.4 Hello Spring Boot</span>
 
-程序员都有”Hello world.“情结，我们在了解了Spring和Spring Boot的历史和特性之后，也以Spring Boot的“Hello world.”来开始我们后续的Spring Boot学习。
+程序员都有”Hello world.“情结，我们在了解了Spring和Spring Boot的历史和特性之后，也以Spring Boot的“Hello world.”来感受我们后续将要学习的Spring Boot应用程序是如何开发的。
 
-请参照本教程第2章的“开发环境配置”，完成本地开发环境的配置，然后再来“Hello Spring Boot.”。
+本小节的目的是为了给大家一个开发Spring Boot应用程序的初步印象，暂时没有开发环境，无法练习也没有关系，学习完第2章后返回来学习效果更好。
+
+> 请参照本教程第2章的“开发环境配置”，完成本地开发环境的配置，然后再来“Hello Spring Boot.”。
 
 ### <span id = "createProject">1.4.1 创建项目</span>
 
@@ -775,4 +783,4 @@ java -jar hello-0.0.1-SNAPSHOT.jar
 1. 简要描述Spring框架是什么？能做什么？
 2. 简要描述Spring框架的版本变迁。
 3. 简要描述Spring Boot出现的历史背景，它是什么？能做什么？能给程序员带来什么好处？
-4. 开发并运行第一个Spring Boot程序，输出“我要好好学习，天天向上。”这样一句话，并观察程序运行过程。
+4. 在完成第2章的学习之后，再回来做这道题：开发并运行第一个Spring Boot程序，输出“我要好好学习，天天向上。”这样一句话，并观察程序运行过程。

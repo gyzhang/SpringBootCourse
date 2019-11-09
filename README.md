@@ -12,7 +12,8 @@
 >
 >--Kevin Zhang
 
-- 本教程使用的Spring Boot版本为2.2.0；
+- 本教程使用的Spring Boot版本为[2.2.1](https://github.com/spring-projects/spring-boot/tree/v2.2.1.RELEASE)；
 - 本教程的每一章节尽量聚焦在当前讨论的知识点范围内，示例也设计为最简；
 - 本教程不涉及Spring Boot的深层次实现机制和如何扩展Spring Boot框架；
 - 已经能够熟练使用Spring Boot进行开发的同学，请绕道，这份教程不适用于你。
+
