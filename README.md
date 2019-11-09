@@ -19,35 +19,5 @@
 
 本教程使用GitBook开发，其**book.json**配置信息如下：
 
-```json
-{
-    "title": "SpringBoot入门教程",
-    "description": "针对初级程序员的Spring Boot入门教程，使用版本2.2.1",
-    "author": "Kevin Zhang",
-	"language": "zh-hans",
-	
-	"plugins": [ 
-		"-search",
-		"search-pro",
-		"code",
-		"splitter",
-		"expandable-chapters",
-		"page-toc-button",
-		"back-to-top-button"
-	],
-	
-	"pluginsConfig": {
-		"search-pro": {
-			"cutWordLib": "nodejieba",
-			"defineWord": ["Spring Boot"],
-			"expandable-chapters":{}
-		}
-	},
-	
-	"pdf": {
-		"paperSize": "a4",
-		"fontSize": 30		
-	}
-}
-```
+![image-20191109161823181](images/image-20191109161823181.png)
 

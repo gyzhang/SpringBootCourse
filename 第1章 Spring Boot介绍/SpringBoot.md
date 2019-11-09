@@ -414,9 +414,11 @@ Spring Boot 2支持了Thymeleaf 3，Thymeleaf 3相对于Thymeleaf 2性能提升�
 
 ## <span id = 'modules'>1.3 Spring Boot的主要模块</span>
 
-学习 Spring Boot必须得了解它的核心模块，和 Spring框架一样，Spring Boot也是一个庞大的项目，也是由许多核心子模块组成的。 
+学习 Spring Boot必须得了解它的核心模块，以对其形成整体的印象。
 
-Spring Boot在github上的[代码模块](https://github.com/spring-projects/spring-boot/tree/master/spring-boot-project)划分，如下图：
+和 Spring框架一样，Spring Boot也是一个庞大的项目，也是由许多核心子模块组成的。 
+
+最权威的，也是最直接的是到Spring Boot在github上的源码，找到其[代码模块](https://github.com/spring-projects/spring-boot/tree/master/spring-boot-project)划分，如下图：
 
 ![image-20191109110901277](images/image-20191109110901277.png)
 
@@ -436,9 +438,11 @@ Spring Boot在github上的[代码模块](https://github.com/spring-projects/spri
 
 ### 1.3.2 spring-boot-autoconfigure
 
-Spring Boot能根据类路径下的内容自动一些公共大型应用，提供的 `@EnableAutoConfiguration` 注解就能启用 Spring 功能的自动配置。
+Spring Boot能根据类路径下的内容自动配置（启用）一些功能依赖（如数据库连接池、MongoDB、Redis等）。
 
-自动配置功能可以推断用户可能需要加载哪些 Spring Bean, 如：如果类路径下有 `HicariCP` 这个连接池的包，此时并未提供任何有效连接池的配置，那么 Spring Boot 就知道你可能需要一个连接池，并做相应配置。如果用户配置了其他连接池，那么 Spring Boot 会放弃自动配置。
+Spring Boot提供的 `@EnableAutoConfiguration` 注解就是启用 Spring功能的自动配置。
+
+自动配置功能可以推断用户可能需要加载哪些 Spring Bean, 如：如果类路径下有 `HicariCP` 这个连接池的包，此时并未提供任何有效连接池的配置，那么 Spring Boot就知道你可能需要一个连接池，并做相应配置。如果用户配置了其他连接池，那么 Spring Boot会放弃自动配置。
 
 ### 1.3.3 spring-boot-starters
 
@@ -450,7 +454,9 @@ Starters，我们叫它启动器好了，它是包括一系列依赖的描述符
 
 ### 1.3.4 spring-boot-cli
 
-这是 Spring Boot 的命令行工具，用于编译和运行 `Groovy` 源程序，可以十分简单的编写并运行一个应用程序。它也能监控你的文件，一旦有变动就会自动重新编译和重新启动应用程序。
+Spring Boot CLI 是 Spring Boot Commad Line 的缩写，是 Spring Boot 命令行工具。在 Spring Boot CLI 中可以跑 Groovy 脚本，通过简单的 Java 语法就可以快速而又简单的学习 Spring Boot 原型。
+
+它也能监控你的文件，一旦有变动就会自动重新编译和重新启动应用程序。
 
 ### 1.3.5 spring-boot-actuator
 
