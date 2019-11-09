@@ -17,3 +17,37 @@
 - 本教程不涉及Spring Boot的深层次实现机制和如何扩展Spring Boot框架；
 - 已经能够熟练使用Spring Boot进行开发的同学，请绕道，这份教程不适用于你。
 
+本教程使用GitBook开发，其**book.json**配置信息如下：
+
+```json
+{
+    "title": "SpringBoot入门教程",
+    "description": "针对初级程序员的Spring Boot入门教程，使用版本2.2.1",
+    "author": "Kevin Zhang",
+	"language": "zh-hans",
+	
+	"plugins": [ 
+		"-search",
+		"search-pro",
+		"code",
+		"splitter",
+		"expandable-chapters",
+		"page-toc-button",
+		"back-to-top-button"
+	],
+	
+	"pluginsConfig": {
+		"search-pro": {
+			"cutWordLib": "nodejieba",
+			"defineWord": ["Spring Boot"],
+			"expandable-chapters":{}
+		}
+	},
+	
+	"pdf": {
+		"paperSize": "a4",
+		"fontSize": 30		
+	}
+}
+```
+
