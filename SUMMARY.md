@@ -19,7 +19,7 @@
     * [3.1 项目结构](第3章 Spring Boot原理剖析/3.1structure.md) 
     * [3.2 基本配置](第3章 Spring Boot原理剖析/3.2baseConfig.md) 
     * [3.3 启动类与核心注解](第3章 Spring Boot原理剖析/3.3annotation.md) 
-    * [3.4 自动配置原理](第3章 Spring Boot原理剖析/3.4autoConfig.md) 
+    * [3.4 启动过程](第3章 Spring Boot原理剖析/3.4startFlow.md) 
     * [3.5 课后作业](第3章 Spring Boot原理剖析/3.5homework.md)
 
 * [第4章 Spring Boot Web开发](第4章 Spring Boot Web开发/SpringBootWeb.md)
