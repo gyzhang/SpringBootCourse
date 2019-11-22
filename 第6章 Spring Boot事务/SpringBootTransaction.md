@@ -1,5 +1,7 @@
 # 第6章 Spring Boot事务
 
+在我们绝大多数的项目中，都会使用到数据库来存储业务数据。几乎所有的数据库操作，都需要事务处理，以保证数据的完整一致性。
+
 https://www.cnblogs.com/zengkefu/p/5742617.html
 
 ## 事务的ACID特性
