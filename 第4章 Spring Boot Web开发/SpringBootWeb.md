@@ -12,5 +12,5 @@ Spring Boot针对Web应用开发，从开发、测试和部署都做了全面地
 
 然后介绍Spring推荐地、替代JSP的模板引擎Thymeleaf，并做简单整合示例。
 
-最后介绍传统Servlet、Listener和Filter如何在Spring Boot中使用，以便兼容以前的遗留应用。
+最后介绍传统Servlet、Listener、Filter和JSP技术如何在Spring Boot中使用，以便兼容以前的遗留应用。
 
