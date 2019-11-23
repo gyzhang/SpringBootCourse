@@ -36,9 +36,10 @@
     * [5.5 课后作业](第5章 Spring Boot数据访问/5.5homework.md)
 
 * [第6章 Spring Boot事务](第6章 Spring Boot事务/SpringBootTransaction.md)
-    * [6.1 事务介绍](第6章 Spring Boot事务/SpringBootTransaction.md#overview) 
-    * [6.2 事务的使用](第6章 Spring Boot事务/SpringBootTransaction.md#use) 
-    * [6.3 Atomikos分布式事务](第6章 Spring Boot事务/SpringBootTransaction.md#distributed) 
+    * [6.1 事务介绍](第6章 Spring Boot事务/6.1transaction.md) 
+    * [6.2 事务的使用](第6章 Spring Boot事务/6.2usingTransaction.md) 
+    * [6.3 分布式事务](第6章 Spring Boot事务/6.3distributedTransaction.md) 
+    * [6.4 课后作业](第6章 Spring Boot事务/6.4homework.md) 
 
 * [第7章 Spring Boot集成Redis](第7章 Spring Boot集成Redis/Redis.md)
     * [7.1 Redis简介](第7章 Spring Boot集成Redis/Redis.md#overview) 
