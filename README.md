@@ -46,7 +46,7 @@
 	
 	"pdf": {
 		"paperSize": "a4",
-		"fontSize": 30		
+		"fontSize": 23		
 	}
 }
 ```
