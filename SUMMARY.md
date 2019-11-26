@@ -42,11 +42,12 @@
     * [6.4 课后作业](第6章 Spring Boot事务/6.4homework.md) 
 
 * [第7章 Spring Boot集成Redis](第7章 Spring Boot集成Redis/Redis.md)
-    * [7.1 Redis简介](第7章 Spring Boot集成Redis/Redis.md#overview) 
-    * [7.2 集成Redis](第7章 Spring Boot集成Redis/Redis.md#integration) 
-    * [7.3 Session共享](第7章 Spring Boot集成Redis/Redis.md#session) 
-    * [7.4 Redis集群](第7章 Spring Boot集成Redis/Redis.md#cluster) 
-
+    * [7.1 Redis简介](第7章 Spring Boot集成Redis/7.1redisOverview.md) 
+    * [7.2 集成Redis](第7章 Spring Boot集成Redis/7.2redisIntegration.md) 
+    * [7.3 Session共享](第7章 Spring Boot集成Redis/7.3redisSession.md) 
+    * [7.4 Redis集群](第7章 Spring Boot集成Redis/7.4redisCluster.md) 
+    * [7.5 课后作业](第7章 Spring Boot集成Redis/7.5homework.md) 
+	
 * [第8章 Spring Boot集成MongoDB](第8章 Spring Boot集成MongoDB/MongoDB.md)
     * [8.1 MongoDB简介](第8章 Spring Boot集成MongoDB/MongoDB.md#overview) 
     * [8.2 集成MongoDB](第8章 Spring Boot集成MongoDB/MongoDB.md#integration) 
