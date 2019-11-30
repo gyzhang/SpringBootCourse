@@ -6,7 +6,7 @@
 
 Spring Boot对市面上常见的缓存方案都提供了良好的支持。例如EhCache、Redis等。
 
-由于我们在项目中经常大量使用Redis，所以，本章讲解Redis的安装、配置及使用。
+由于我们在项目中经常大量使用Redis，所以，本章讲解Redis的安装、配置及使用。最后还讲解了如何安装配置Redis集群，并用代码示例了如何在Spring Boot中访问Redis集群服务器。
 
 
 
