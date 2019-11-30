@@ -109,11 +109,10 @@
 * [后记](Postscript.md)
 
 * [附录1 前后端分离的vue急速入门](附录1 前后端分离的vue急速入门/Vue.md)
-    * [A.1 vue介绍](附录1 前后端分离的vue急速入门/Vue.md#overview)
-    * [A.2 vue开发环境配置](附录1 前后端分离的vue急速入门/Vue.md#config)
-    * [A.3 Hello vue](附录1 前后端分离的vue急速入门/Vue.md#hello)
-    * [A.3 前后端分离的部署](附录1 前后端分离的vue急速入门/Vue.md#deploy)
-    * [A.4 vue路由示例](附录1 前后端分离的vue急速入门/Vue.md#router)
-    * [A.5 急速入门总结](附录1 前后端分离的vue急速入门/Vue.md#summary)
+    * [A.1 vue介绍](附录1 前后端分离的vue急速入门/0.1vueOverview.md)
+    * [A.2 vue开发环境配置](附录1 前后端分离的vue急速入门/0.2vueConfig.md)
+    * [A.3 Hello Vue](附录1 前后端分离的vue急速入门/0.3helloVue.md)
+    * [A.4 前后端分离的部署](附录1 前后端分离的vue急速入门/0.4deploy.md)
+    * [A.5 急速入门总结](附录1 前后端分离的vue急速入门/0.5vueSummary.md)
 
 * [附录2 Spring Boot配置大全](附录2 Spring Boot配置大全/Configuration.md)
