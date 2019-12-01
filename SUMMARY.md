@@ -49,8 +49,9 @@
     * [7.5 课后作业](第7章 Spring Boot集成Redis/7.5homework.md) 
 	
 * [第8章 Spring Boot集成MongoDB](第8章 Spring Boot集成MongoDB/MongoDB.md)
-    * [8.1 MongoDB简介](第8章 Spring Boot集成MongoDB/MongoDB.md#overview) 
-    * [8.2 集成MongoDB](第8章 Spring Boot集成MongoDB/MongoDB.md#integration) 
+    * [8.1 MongoDB简介](第8章 Spring Boot集成MongoDB/8.1mongoDBOverview.md) 
+    * [8.2 集成MongoDB](第8章 Spring Boot集成MongoDB/8.2mongoDBIntegration.md) 
+    * [8.3 课后作业](第8章 Spring Boot集成MongoDB/8.3homework.md) 
 
 * [第9章 Spring Boot与异步消息](第9章 Spring Boot与异步消息/MQ.md)
     * [9.1 JMS简介](第9章 Spring Boot与异步消息/MQ.md#overview) 
