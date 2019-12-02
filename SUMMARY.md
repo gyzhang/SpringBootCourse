@@ -13,7 +13,8 @@
     * [2.3 安装配置STS](第2章 开发环境配置/2.3sts.md) 
     * [2.4 安装MySQL和管理工具](第2章 开发环境配置/2.4mysql.md) 
     * [2.5 验证开发环境](第2章 开发环境配置/2.5validation.md) 
-    * [2.6 课后作业](第2章 开发环境配置/2.6homework.md)
+    * [2.6 安装Postman](第2章 开发环境配置/2.6postman.md)
+    * [2.7 课后作业](第2章 开发环境配置/2.7homework.md)
 
 * [第3章 Spring Boot原理剖析](第3章 Spring Boot原理剖析/SpringBootHow.md)
     * [3.1 项目结构](第3章 Spring Boot原理剖析/3.1structure.md) 
