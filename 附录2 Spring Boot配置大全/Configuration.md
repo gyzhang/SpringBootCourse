@@ -1,8 +1,8 @@
 # 附录2 Spring Boot配置大全
 
-> 我只是Spring Boot文档的搬运工（还是只搬运文档目录的那种）。
+> 我只是Spring Boot[官方文档](https://docs.spring.io/spring-boot/docs/current/reference/html/)的搬运工（还是只搬运文档目录的那种）。
 
-详细文档在这里：[Spring Boot官方文档](https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html#common-application-properties)，这篇附录出现在这里的目的，只是为了大家方便查找而已。
+详细文档在这里：[Spring Boot官方文档](https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html#common-application-properties)，这篇附录出现在这里的目的，只是为了方便查找而已。
 
 ## 1. [Core properties](https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html#core-properties)
 
@@ -40,7 +40,7 @@
 
 > 离线文档，请移步到[这里](https://repo.spring.io/release/org/springframework/boot/spring-boot-docs/2.2.1.RELEASE/)。
 
-写在最后：这一个附录的出现，主要原因是我接触了太多的开发人员，有些人有这样一个特点：**不爱看官方文档**，尤其不爱看***英文***的官方文档。如果由于这一篇附录，能够引导一些人开始习惯于查阅（临时应急）或浏览（日常学习）官方文档，那就善莫大焉。
+写在最后：这个附录出现在这里的主要原因是我接触了太多的开发人员，有些开发人员有这样一个特点：**不爱看官方文档**，尤其不爱看***英文***的官方文档。如果由于这一篇附录，能够引导这些开发人员开始习惯于查阅（临时应急）或浏览（日常学习）官方文档，那就善莫大焉。
 
 
 
