@@ -55,11 +55,12 @@
     * [8.3 课后作业](第8章 Spring Boot集成MongoDB/8.3homework.md) 
 
 * [第9章 Spring Boot与异步消息](第9章 Spring Boot与异步消息/MQ.md)
-    * [9.1 JMS简介](第9章 Spring Boot与异步消息/9.1jms.md) 
+    * [9.1 有关消息的概念](第9章 Spring Boot与异步消息/9.1jms.md) 
     * [9.2 Spring Boot集成ActiveMQ](第9章 Spring Boot与异步消息/9.2activeMQ.md) 
     * [9.3 Spring Boot集成RabbitMQ](第9章 Spring Boot与异步消息/9.3rabbitMQ.md) 
     * [9.4 Spring Boot集成RocketMQ](第9章 Spring Boot与异步消息/9.4rocketMQ.md) 
-    * [9.5 课后作业](第9章 Spring Boot与异步消息/9.5homework.md) 
+    * [9.5 Spring Boot集成Kafka](第9章 Spring Boot与异步消息/9.5kafka.md) 
+    * [9.6 课后作业](第9章 Spring Boot与异步消息/9.6homework.md) 
 
 * [第10章 异常处理](第10章 异常处理/Exception.md)
     * [10.1 异常介绍](第10章 异常处理/Exception.md#overview) 
