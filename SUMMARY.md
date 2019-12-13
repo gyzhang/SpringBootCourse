@@ -63,13 +63,15 @@
     * [9.6 课后作业](第9章 Spring Boot与异步消息/9.6homework.md) 
 
 * [第10章 异常处理](第10章 异常处理/Exception.md)
-    * [10.1 异常介绍](第10章 异常处理/Exception.md#overview) 
-    * [10.2 Spring Boot中全局异常的使用](第10章 异常处理/Exception.md#use) 
-    * [10.3 异常的重试](第10章 异常处理/Exception.md#retry) 
+    * [10.1 异常介绍](第10章 异常处理/10.1exceptionOverview.md) m'd
+    * [10.2 Spring Boot中全局异常的使用](第10章 异常处理/10.2globalException.md) 
+    * [10.3 异常的重试](第10章 异常处理/10.3retry.md) 
+    * [10.4 课后作业](第10章 异常处理/10.4homework.md) 
 
 * [第11章 单元测试与热部署](第11章 单元测试与热部署/UnitTestHotDeploy.md)
-    * [11.1 Spring Boot中的单元测试](第11章 单元测试与热部署/UnitTestHotDeploy.md#unitTest) 
-    * [11.2 Spring Boot对热部署的支持](第11章 单元测试与热部署/UnitTestHotDeploy.md#hotDeploy) 
+    * [11.1 Spring Boot中的单元测试](第11章 单元测试与热部署/11.1unitTest.md) 
+    * [11.2 Spring Boot对热部署的支持](第11章 单元测试与热部署/11.2hotDeploy.md) 
+    * [11.3 课后作业](第11章 单元测试与热部署/11.3homework.md) 
 
 * [第12章 Spring Boot安全控制](第12章 Spring Boot安全控制/Securyty.md)
     * [12.1 Spring Security介绍](第12章 Spring Boot安全控制/Securyty.md#overview) 
@@ -120,3 +122,5 @@
     * [A.7 课后作业](附录1 前后端分离的vue急速入门/0.7homework.md)
 
 * [附录2 Spring Boot配置大全](附录2 Spring Boot配置大全/Configuration.md)
+
+* [附录3 在Docker中部署Spring Boot应用](附录3 在Docker中部署Spring Boot应用/Docker.md)
