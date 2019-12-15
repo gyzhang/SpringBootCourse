@@ -103,7 +103,7 @@ Docker Hub 提供众多镜像，我们可以从中自由地下载数十万计的
 
 ### A3.3.1 拉取镜像
 
-当我们需要某一镜像时，可以去官方Docker hub[https://registry.hub.docker.com](https://registry.hub.docker.com)上查找需要的镜像，然后使用命令`docker pull IMAGE_NAME `拉取镜像。
+当我们需要某一镜像时，可以去官方“**Docker hub**”：[https://registry.hub.docker.com](https://registry.hub.docker.com)上查找需要的镜像，然后使用命令`docker pull IMAGE_NAME `拉取镜像。
 
 ![image-20191214102733810](images/image-20191214102733810.png)
 

@@ -2,7 +2,7 @@
 
 使用Thymeleaf，jsp，Servlet，vue的大杂烩前端
 
-数据库使用MySQL，MongoDB
+数据库使用MySQL，MongoDB，Docker容器（使用Windows环境）
 
 MyBatis分页，MyBatisPlus整合
 
@@ -14,9 +14,9 @@ MyBatis分页，MyBatisPlus整合
 
 邮件提醒，批处理调度，WebSocket聊天
 
-应用监控，Swagger2
+应用监控（自定义1个监控端点），Swagger2
 
 
 
-示例的业务主题：用户注册+登录+用户（客帐卡+交易）转账（基于消息的分布式事务）。
+示例的业务场景：用户注册+登录+订单库存（基于消息的分布式事务），并引出后续Spring Cloud的相关介绍，对接下一个“Spring Cloud培训教程”。
 
