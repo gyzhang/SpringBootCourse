@@ -19,4 +19,5 @@
 >
 > 那是因为托了 Spring Boot 的福：大大降低了 Spring Security 的使用门槛。
 
+更多关于Spring Security 的学习材料，请参考这里：[https://www.baeldung.com/security-spring](https://www.baeldung.com/security-spring)
 
