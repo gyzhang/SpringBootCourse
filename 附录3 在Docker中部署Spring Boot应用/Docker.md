@@ -2,7 +2,7 @@
 
 Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台。
 
-Docker 属于 Linux 容器的一种封装，提供简单易用的容器使用接口，它是目前最流行的 Linux 容器决方案。Docker 将应用程序与该程序的依赖打包在一个文件里面，运行这个文件，就会生成一个虚拟容器。程序在这个虚拟容器里运行，就好像在真实的物理机上运行一样，有了 Docker，就不用担心环境问题了。
+Docker属于Linux容器的一种封装，提供简单易用的容器使用接口，它是目前最流行的Linux容器解决方案。Docker将应用程序与该程序的依赖打包在一个文件里面，运行这个文件，就会生成一个虚拟容器。程序在这个虚拟容器里运行，就好像在真实的物理机上运行一样，有了Docker，就再也不用担心环境问题了。
 
 > 和Docker经常一起提到的是虚拟机，不严格的可以将Docker与虚拟机类比于线程与进程。在宿主机器中启动一个Docker容器的系统开销远远小于启动一个虚拟机。
 
@@ -16,7 +16,7 @@ Docker通常用于如下场景：
 
 本附录中，我们将使用一个最简单的Spring Boot项目来讲解如何在macOS的Docker容器中部署应用。
 
-> 为什么不选择Windows？因为Docker天生就是为Linux开发的，在macOS中使用也很方便。在很长一段时间内，都没有直接在Windows上直接运行的Docker环境，在Windows中需要通过Linux虚拟机间接的使用。当前官方为最新的Docker提供了在Windows 10的某些版本上直接运行的环境。
+> 为什么不选择Windows？因为Docker天生就是为Linux开发的，在macOS中使用也很方便。在很长一段时间内，都没有直接在Windows上直接运行的Docker环境，在Windows中需要通过Linux虚拟机间接的使用。当前官方为最新的Docker提供了在Windows 10的某些版本（专业版）上直接运行的环境。
 >
 > 所以本附录中的示例使用macOS，所有的操作和命令与Linux中的操作保持一致。
 
@@ -24,15 +24,15 @@ Docker通常用于如下场景：
 
 Docker系统有两个程序：docker服务端和docker客户端。其中docker服务端是一个服务进程，管理着所有的容器。docker客户端则扮演着docker服务端的远程控制器，可以用来控制docker的服务端进程。大部分情况下，docker服务端和客户端运行在一台机器上。
 
-- **Docker daemon：**Docker 守护进程，运⾏在宿主机上（如本附录写作时，其运行在我的MacBook Pro上），用户通过 Docker client（在其中使用Docker 命令）与Docker daemon 交互。
+- **Docker daemon：**Docker守护进程，运行在宿主机上（如本附录写作时，其运行在我的MacBook Pro上），用户通过Docker Client（在其中使用Docker 命令）与Docker daemon交互。
 
-- **Docker client：**Docker 命令行工具，是用户使用 Docker 的主要方式。Docker client 与 Docker daemon 通信并将结果返回给用户，Docker client 也可以通过 socket 或者 RESTful API 访问远程的Docker daemon。
+- **Docker client：**Docker命令行工具，是用户使用Docker的主要方式。Docker client与Docker daemon通信并将结果返回给用户，Docker client也可以通过socket或者RESTful API访问远程的Docker daemon。
 
-- **Docker image：**镜像是只读的，镜像中包含有需要运行的文件。镜像⽤来创建 container，一个镜可以运⾏多个 container（image和container可以简单的类比于类和对象的关系）；镜像可以通过 Dockerfile 创建，也可以从 Docker hub/registry 上下载。
+- **Docker image：**镜像是只读的，镜像中包含有需要运行的文件。镜像用来创建 container，一个镜可以运行多个container（image和container可以简单的类比于类和对象的关系）；镜像可以通过Dockerfile创建，也可以从Docker hub/registry上下载。
 
-- **Docker container：**容器是 Docker 的运行组件，可以被创建、启动、停止、删除、暂停等。启动一个镜像就是创建运行一个容器，容器是一个隔离环境，多个容器之间不会相互影响，保证容器中的程序运行在一个相对安全的环境中。
+- **Docker container：**容器是Docker的运行组件，可以被创建、启动、停止、删除、暂停等。启动一个镜像就是创建运行一个容器，容器是一个隔离环境，多个容器之间不会相互影响，保证容器中的程序运行在一个相对安全的环境中。
 
-- **Docker hub/registry：**保存、共享和管理 Docker 镜像的仓库（类似于github，或者maven中央仓库），用户可以上传或者下载上面的镜像，官⽅地址[https://registry.hub.docker.com](https://registry.hub.docker.com)，也可以搭建⾃己私有的 Docker registry（类似于私服）。
+- **Docker hub/registry：**保存、共享和管理Docker镜像的仓库（类似于github，或者maven中央仓库），用户可以上传或者下载上面的镜像，官方地址[https://registry.hub.docker.com](https://registry.hub.docker.com)，也可以搭建自己私有的 Docker registry（类似于私服）。
 
 ## A3.2 安装
 
