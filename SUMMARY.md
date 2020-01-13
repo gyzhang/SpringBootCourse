@@ -73,11 +73,11 @@
     * [11.2 Spring Boot对热部署的支持](第11章 单元测试与热部署/11.2hotDeploy.md) 
     * [11.3 课后作业](第11章 单元测试与热部署/11.3homework.md) 
 
-* [第12章 Spring Boot安全控制](第12章 Spring Boot安全控制/Securyty.md)
-    * [12.1 Spring Security介绍](第12章 Spring Boot安全控制/12.1securytyOverview.md) 
-    * [12.2 集成Spring Securyty](第12章 Spring Boot安全控制/12.2securytyIntegration.md) 
-    * [12.3 OAuth 2](第12章 Spring Boot安全控制/12.3securytyOauth2.md) 
-    * [12.4 集成CAS单点登录](第12章 Spring Boot安全控制/12.4securytySSO.md) 
+* [第12章 Spring Boot安全控制](第12章 Spring Boot安全控制/Security.md)
+    * [12.1 Spring Security介绍](第12章 Spring Boot安全控制/12.1securityOverview.md) 
+    * [12.2 集成Spring Security](第12章 Spring Boot安全控制/12.2securityIntegration.md) 
+    * [12.3 OAuth 2](第12章 Spring Boot安全控制/12.3securityOauth2.md) 
+    * [12.4 集成CAS单点登录](第12章 Spring Boot安全控制/12.4securitySSO.md) 
     * [12.5 课后作业](第12章 Spring Boot安全控制/12.5homework.md) 
 
 * [第13章 Spring Boot应用监控](第13章 Spring Boot应用监控/Monitor.md)
