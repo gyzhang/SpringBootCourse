@@ -84,8 +84,7 @@
     * [13.1 应用监控介绍](第13章 Spring Boot应用监控/13.1monitorOverview.md) 
     * [13.2 使用应用监控](第13章 Spring Boot应用监控/13.2monitorUse.md) 
     * [13.3 自定义端点](第13章 Spring Boot应用监控/13.3monitorCustomize.md) 
-    * [13.4 保护端点](第13章 Spring Boot应用监控/13.4monitorProtect.md) 
-    * [13.5 课后作业](第13章 Spring Boot应用监控/13.5homework.md) 
+    * [13.4 课后作业](第13章 Spring Boot应用监控/13.4homework.md) 
 
 * [第14章 企业级开发](第14章 企业级开发/Enterprise.md)
     * [14.1 邮件发送](第14章 企业级开发/14.1mail.md) 
