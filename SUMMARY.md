@@ -96,10 +96,9 @@
     * [14.7 课后作业](第14章 企业级开发/14.7homework.md) 
 
 * [第15章 多环境配置与部署](第15章 多环境配置与部署/MultEnv.md)
-    * [15.1 多环境配置介绍](第15章 多环境配置与部署/15.1multEnvOverview.md) 
-    * [15.2 使用多环境配置](第15章 多环境配置与部署/15.2multEnvUse.md) 
-    * [15.3 打包部署应用](第15章 多环境配置与部署/15.3multEnvDeploy.md) 
-    * [15.4 课后作业](第15章 多环境配置与部署/15.4homework.md) 
+    * [15.1 使用多环境配置](第15章 多环境配置与部署/15.1multEnvUse.md) 
+    * [15.2 打包部署应用](第15章 多环境配置与部署/15.2multEnvDeploy.md) 
+    * [15.3 课后作业](第15章 多环境配置与部署/15.3homework.md) 
 
 * [第16章 Spring Boot综合示例](第16章 Spring Boot综合示例/DevExample.md)
     * [16.1 项目背景介绍](第16章 Spring Boot综合示例/16.1devExampleOverview.md) 
