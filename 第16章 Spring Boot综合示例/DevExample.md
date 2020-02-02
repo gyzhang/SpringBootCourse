@@ -1,5 +1,11 @@
 # 第16章 Spring Boot综合示例
 
+
+
+使用 github 上开源的“[微人事](https://github.com/lenve/vhr)”项目来串接在本教程种学习到的各个知识点。
+
+
+
 使用Thymeleaf，jsp，Servlet，vue的大杂烩前端
 
 数据库使用MySQL，MongoDB，Docker容器（使用Windows环境）
