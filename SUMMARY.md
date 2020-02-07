@@ -76,9 +76,8 @@
 * [第12章 Spring Boot安全控制](第12章 Spring Boot安全控制/Security.md)
     * [12.1 Spring Security介绍](第12章 Spring Boot安全控制/12.1securityOverview.md) 
     * [12.2 集成Spring Security](第12章 Spring Boot安全控制/12.2securityIntegration.md) 
-    * [12.3 OAuth 2](第12章 Spring Boot安全控制/12.3securityOauth2.md) 
-    * [12.4 集成CAS单点登录](第12章 Spring Boot安全控制/12.4securitySSO.md) 
-    * [12.5 课后作业](第12章 Spring Boot安全控制/12.5homework.md) 
+    * [12.3 OAuth 2](第12章 Spring Boot安全控制/12.3securityOauth2.md)
+    * [12.4 课后作业](第12章 Spring Boot安全控制/12.4homework.md) 
 
 * [第13章 Spring Boot应用监控](第13章 Spring Boot应用监控/Monitor.md)
     * [13.1 应用监控介绍](第13章 Spring Boot应用监控/13.1monitorOverview.md) 
@@ -114,3 +113,5 @@
 * [附录2 Spring Boot配置大全](附录2 Spring Boot配置大全/Configuration.md)
 
 * [附录3 在Docker中部署Spring Boot应用](附录3 在Docker中部署Spring Boot应用/Docker.md)
+
+* [广告 融宝大学堂招生](EnrollmentAd.md)
