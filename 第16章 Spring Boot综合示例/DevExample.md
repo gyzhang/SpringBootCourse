@@ -1,28 +1,16 @@
 # 第16章 Spring Boot综合示例
 
+经过前面15章节的学习，我们已经了解了 Spring Boot 的部分生态技术栈。
 
+在本章，我们通过 github 上开源的“[微人事](https://github.com/lenve/vhr)”项目来串接在本教程种学习到的各个知识点。
 
-使用 github 上开源的“[微人事](https://github.com/lenve/vhr)”项目来串接在本教程种学习到的各个知识点。
+> 该项目的作者是**王松**，微信公众号**江南一点雨**，感谢作者开源的这个示例项目。
 
+项目完成常见的企业人事管理系统，包括机构、员工资料管理，人事管理，工资管理，沟通聊天室等业务功能。
 
+**项目后端技术栈：**Spring Boot、Spring Security、MyBatis、MySQL、Redis、RabbitMQ、Spring Cache、WebSocket...
 
-使用Thymeleaf，jsp，Servlet，vue的大杂烩前端
+**项目前端技术栈：**Vue、ElementUI、axios、vue-router、Vuex、WebSocket、vue-cli4...
 
-数据库使用MySQL，MongoDB，Docker容器（使用Windows环境）
-
-MyBatis分页，MyBatisPlus整合
-
-缓存使用Redis，Session共享
-
-消息使用RocketMQ，分布式事务
-
-提供OAuth2安全认证
-
-邮件提醒，批处理调度，WebSocket聊天
-
-应用监控（自定义1个监控端点），Swagger2
-
-
-
-示例的业务场景：用户注册+登录+订单库存（基于消息的分布式事务），并引出后续Spring Cloud的相关介绍，对接下一个“Spring Cloud培训教程”。
+在这一章中，我们会对项目的设计、关键配置、代码进行解读。
 
