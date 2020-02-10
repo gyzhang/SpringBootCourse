@@ -38,6 +38,8 @@ Docker系统有两个程序：docker服务端和docker客户端。其中docker�
 
 到Docker[官方下载](https://download.docker.com/mac/stable/Docker.dmg)Docker Desktop，如果下载速度太慢，建议使用下载工具下载，如迅雷。
 
+> Windows 版下载地址是：[https://download.docker.com/win/stable/Docker Desktop Installer.exe](https://download.docker.com/win/stable/Docker%20Desktop%20Installer.exe)
+
 ![image-20191213234819603](images/image-20191213234819603.png)
 
 双击下载完成的Docker.dmg磁盘镜像文件，将Docker.app拖动到Applicatios文件夹中完成安装。
@@ -83,7 +85,7 @@ kevin@KevindeMacBook-Pro ~ %
 
 Docker Hub 提供众多镜像，我们可以从中自由地下载数十万计的免费应用镜像， 这些镜像作为 docker 生态圈的基石，是我们使用和学习 docker 不可或缺的资源。但是，在国内访问Docker Hub速度较慢，为Docker添加国内镜像源，可以非常有效地提高镜像的下载速度。
 
-当前比较快的国内镜像源推荐`http://f1361db2.m.daocloud.io`。
+当前比较快的国内镜像源推荐`http://hub-mirror.c.163.com`。
 
 打开Docker的首选项。
 
@@ -92,6 +94,23 @@ Docker Hub 提供众多镜像，我们可以从中自由地下载数十万计的
 添加国内镜像源，然后"Apply & Restart"。
 
 ![image-20191214004702158](images/image-20191214004702158.png)
+
+在 Windows 版本的 Docker Desktop 中配置国内镜像源，参考下图：
+
+![image-20200210102606746](images/image-20200210102606746.png)
+
+```json
+{
+  "registry-mirrors": [
+    "http://hub-mirror.c.163.com",
+    "https://mirror.ccs.tencentyun.com",
+    "https://registry.docker-cn.com"
+  ],
+  "insecure-registries": [],
+  "debug": true,
+  "experimental": false
+}
+```
 
 打开终端，输入`docker pull nginx`命令，拉取nginx镜像，测试下载速度。
 
