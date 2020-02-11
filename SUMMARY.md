@@ -99,6 +99,12 @@
     * [15.2 打包部署应用](第15章 多环境配置与部署/15.2multEnvDeploy.md) 
     * [15.3 课后作业](第15章 多环境配置与部署/15.3homework.md) 
 
+* [第16章 Spring Boot综合示例](第16章 Spring Boot综合示例/DevExample.md)
+    * [16.1 项目部署](第16章 Spring Boot综合示例/16.1devExampleOverview.md) 
+    * [16.2 后端项目设计](第16章 Spring Boot综合示例/16.2devExampleDesign.md) 
+    * [16.3 前端项目设计](第16章 Spring Boot综合示例/16.3devExampleFrontVue.md) 
+    * [16.4 课后作业](第16章 Spring Boot综合示例/16.4homework.md) 
+
 * [后记](Postscript.md)
 
 * [附录1 前后端分离的vue急速入门](附录1 前后端分离的vue急速入门/Vue.md)
