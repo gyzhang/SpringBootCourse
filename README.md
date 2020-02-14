@@ -24,7 +24,7 @@
 
 如何将本书编译成 pdf、epub 等电子书格式？
 
-1. 先到 [https://nodejs.org/en/](https://nodejs.org/en/) 下载 node.js LTS（node-v12.15.0-x64.msi） 版，安装；
+1. 先到 [https://nodejs.org/en/](https://nodejs.org/en/) 下载 node.js LTS（[node-v12.16.0-x64.msi](https://nodejs.org/dist/v12.16.0/node-v12.16.0-x64.msi)） 版，安装；
 2. 打开命令行窗口输入命令 `npm i -g gitbook-cli` 安装 gitbook 环境；
 3. 然后到 [https://calibre-ebook.com/](https://calibre-ebook.com/) 下载 [calibre 3.40.1](https://download.calibre-ebook.com/3.40.1/calibre-64bit-3.40.1.msi) 并安装。需要注意的是最新版本和 gitbook 不兼容；
 4. 将本教程的版本库下载或克隆到本地；
