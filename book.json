@@ -11,7 +11,8 @@
 		"splitter",
 		"expandable-chapters",
 		"page-toc-button",
-		"back-to-top-button"
+		"back-to-top-button",
+		"icp"
 	],
 	
 	"pluginsConfig": {
@@ -19,11 +20,15 @@
 			"cutWordLib": "nodejieba",
 			"defineWord": ["Spring Boot"],
 			"expandable-chapters":{}
-		}
+		},
+		"icp": {
+        	"number": "蜀ICP备20013663号"
+        }
 	},
 	
 	"pdf": {
 		"paperSize": "a4",
 		"fontSize": 23		
 	}
+
 }
