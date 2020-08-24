@@ -254,7 +254,7 @@ docker run --name SpringBootDockerHello -p 8080:8080 springboot-docker:0.0.1-SNA
 
 ![image-20191214122706408](images/image-20191214122706408.png)
 
-打开浏览球，访问[http://localhost:8080/docker/hello](http://localhost:8080/docker/hello)地址，检查Docker容器是否正常工作。
+打开浏览器，访问[http://localhost:8080/docker/hello](http://localhost:8080/docker/hello)地址，检查Docker容器是否正常工作。
 
 ![image-20191214122820779](images/image-20191214122820779.png)
 
