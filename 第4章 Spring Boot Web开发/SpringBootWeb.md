@@ -12,9 +12,11 @@ Spring Boot 针对 Web 应用开发，从开发、测试和部署都做了全面
 
 本章，我们会先介绍 Spring MVC 的特点，结合 Spring Boot 如何方便地开发 RESTful 风格的应用。
 
-然后介绍 Spring 推荐地、替代 JSP 的模板引擎 Thymeleaf，并做简单整合示例。
+然后介绍 Spring 推荐的、替代 JSP 的模板引擎 Thymeleaf（虽然并不好用），并做简单整合示例。
 
 > Thymeleaf 在做 Web 页面引擎方面实际上也不咋样，还有一个不错的引擎 pebbletemplates，可以尝试。
 
 最后介绍传统 Servlet、Listener、Filter 和 JSP 技术如何在 Spring Boot 中使用，以便兼容以前的遗留应用。
 
+> 为什么还要介绍传统的 Servlet 技术？
+> 因为在重要的生产系统中，祖传代码还是蛮多的。
