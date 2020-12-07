@@ -1,14 +1,14 @@
-# 第8章 Spring Boot集成MongoDB
+# 第8章 Spring Boot 集成 MongoDB
 
 MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写。旨在为 WEB 应用提供可扩展的高性能数据存储解决方案。
 
 MongoDB 是一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。
 
-> MongoDB 不是芒果（Mango），mongo来自于humongous（巨大的；庞大的）这个单词的中间部分，象征着大数据，MongoDB顾名思义就是“大数据的数据库”，而不是什么“芒果数据库”。
+> MongoDB 不是芒果（Mango），mongo 来自于 humongous（巨大的；庞大的）这个单词的中间部分，象征着大数据，MongoDB 顾名思义就是“大数据的数据库”，而不是什么“芒果数据库”。
 
-由于MongoDB的各种特性，我们会经常在项目中用到这种数据库。
+由于 MongoDB 的各种特性，我们会经常在项目中用到这种数据库。
 
-- Flowable使用MongoDB处理历史数据以加快流程引擎的处理效率。
-- 在数据清洗环节，先把格式不规范的数据落地到MongoDB中，清洗后再存入MySQL中。
+- Flowable 使用 MongoDB 处理历史数据以加快流程引擎的处理效率。
+- 在数据清洗环节，先把格式不规范的数据落地到 MongoDB 中，清洗后再存入 MySQL 中。
 
-本章，我们会简要介绍MongoDB的安装、配置和用法，然后再结合Spring Boot讲解如何在实际项目中集成MongoDB，以达到快速实现项目业务需求的目的。
+本章，我们会简要介绍 MongoDB 的安装、配置和用法，然后再结合 Spring Boot 讲解如何在实际项目中集成 MongoDB，以达到快速实现项目业务需求的目的。
