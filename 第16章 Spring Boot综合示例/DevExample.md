@@ -1,6 +1,6 @@
-# 第16章 Spring Boot综合示例
+# 第16章 Spring Boot 综合示例
 
-经过前面15章节的学习，我们已经了解了 Spring Boot 的部分生态技术栈。
+经过前面 15 章的学习，我们已经了解了 Spring Boot 的部分生态技术栈。
 
 在本章，我们将通过 github 上开源的“[微人事](https://github.com/lenve/vhr)”项目来串接在本教程种学习到的各个知识点。
 
@@ -13,4 +13,3 @@
 **项目前端技术栈：**Vue、ElementUI、axios、vue-router、Vuex、WebSocket、vue-cli4...
 
 在这一章中，我们会对项目的设计、关键配置、代码进行解读。为了更好地衔接后续 “Spring Cloud 培训教程” ，我们会使用 docker 容器来提供数据库、缓存和消息等服务。
-
