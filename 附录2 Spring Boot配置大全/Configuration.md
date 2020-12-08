@@ -1,6 +1,6 @@
-# A2 Spring Boot配置大全
+# A2 Spring Boot 配置大全
 
-> 我只是Spring Boot[官方文档](https://docs.spring.io/spring-boot/docs/current/reference/html/)的搬运工（还是只搬运文档目录的那种）。
+> 我只是 Spring Boot [官方文档](https://docs.spring.io/spring-boot/docs/current/reference/html/) 的搬运工（还是只搬运文档目录的那种）。
 
 详细文档在这里：[Spring Boot官方文档](https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html#common-application-properties)，这篇附录出现在这里的目的，只是为了方便查找而已。
 
