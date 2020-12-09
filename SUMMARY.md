@@ -124,4 +124,6 @@
 
 * [附录4 开始开发你的前后端分离应用](附录4 开始开发你的前后端分离应用/AntDesignProVue.md)
 
+* [附录5 前进到Spring Cloud](附录5 前进到Spring Cloud/HelloSpringCloud.md)
+
 * [广告 融宝大学堂招生](EnrollmentAd.md)
