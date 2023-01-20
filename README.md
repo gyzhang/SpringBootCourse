@@ -32,3 +32,21 @@
 6. 执行 `gitbook install` 安装 gitbook 插件；
 7. 执行 `gitbook pdf` 生成本书的 pdf 版本；
 8. 执行 `gitbook epub` 生成本书的 epub 电子书。
+
+高版本 nodejs 与 gitbook 不兼容的处理：
+
+1. 修改`USER_HOME\AppData\Roaming\npm\node_modules\gitbook-cli\node_modules\npm\node_modules\graceful-fs\polyfills.js`，注释掉 62~64 行代码：
+
+```js
+//fs.stat = statFix(fs.stat)
+//fs.fstat = statFix(fs.fstat)
+//fs.lstat = statFix(fs.lstat)
+```
+
+2. 修改`USER_HOME\.gitbook\versions\3.2.3\lib\init.js`，将72行注释掉，替换成下面的这行代码：
+
+```js
+//return fs.writeFile(filePath, summary.toText(extension));
+return summary.toText(extension).then(stx=>{return fs.writeFile(filePath, stx);})
+```
+
